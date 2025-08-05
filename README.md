@@ -367,10 +367,8 @@ pom.xml
 			<version>4.8.1</version>
 		</dependency>
 ```
-application.properties
-```
-elasticsearch.base.url=https://avnadmin:1Nljw6Duro7x5mi8@handson-handson-52c9.aivencloud.com:19384
-elasticsearch.key=avnadmin:1Nljw6Duro7x5mi8
+
+
 elasticsearch.index=[yourname]
 ```
 apply patch elasticSearch
