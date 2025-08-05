@@ -108,17 +108,9 @@ pom.xml
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
-		</dependency>
-```
-application.properties
-```
-spring.redis.host=redis
-spring.redis.port=6379
 
-spring.redis.pool.max-active=8  
-spring.redis.pool.max-wait=-1  
-spring.redis.pool.max-idle=8  
-spring.redis.pool.min-idle=0
+```
+
 ```
 docker-compose.yml
 ```
@@ -274,25 +266,7 @@ pom.xml
 		</dependency>
 ```
 
-application.properties
-```
-spring.kafka.bootstrap-servers=kafka:9092
-spring.kafka.producer.retries=0
-spring.kafka.producer.acks=1
-spring.kafka.producer.batch-size=16384
-spring.kafka.producer.properties.linger.ms=0
-spring.kafka.producer.buffer-memory = 33554432
-spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
-spring.kafka.producer.value-serializer=org.springframework.kafka.support.serializer.JsonSerializer
-spring.kafka.consumer.properties.group.id=searchengine
-spring.kafka.consumer.auto-offset-reset=earliest
-spring.kafka.consumer.enable-auto-commit=true
-spring.kafka.consumer.auto-commit-interval=1000
-spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer
-spring.kafka.consumer.value-deserializer=org.springframework.kafka.support.serializer.JsonDeserializer
-spring.kafka.consumer.properties.session.timeout.ms=120000
-spring.kafka.consumer.properties.request.timeout.ms=180000
-spring.kafka.listener.missing-topics-fatal=false
+
 ```
 docker-compose.yml
 ```
